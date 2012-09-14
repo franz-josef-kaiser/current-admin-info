@@ -11,10 +11,13 @@ The info appears in new tabs in the »Contextual Help«-panel in the upper right
 * Set Globals: Arrays/Objects are hidden and shown on click (js).
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-1.png" />
-<sup>The contextual hooks tab.</sup>
+
+<br /><sup>The contextual hooks tab.</sup>
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-2.png" />
-<sup>The available and set globals tab. Closed Arrays/Objects</sup>
+
+<br /><sup>The available and set globals tab. Closed Arrays/Objects</sup>
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-3.png" />
-<sup>The available and set globals tab. Showing an open Array/Object</sup> 
+
+<br /><sup>The available and set globals tab. Showing an open Array/Object</sup> 
