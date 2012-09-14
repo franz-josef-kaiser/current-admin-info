@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Current admin screen info
  * Description: Show information about contextual hooks and availability of globals in the admin UI.
- * Version:     2012-09-14.1801
+ * Version:     2012-09-14.1858
  * Author:      Franz Josef Kaiser <wecodemore@gmail.com>
  * Author URI:  http://unserkaiser.com
  * License:     The MIT License (MIT)
