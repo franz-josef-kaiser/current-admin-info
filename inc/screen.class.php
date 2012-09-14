@@ -32,7 +32,11 @@ final class current_admin_screen extends current_screen_data
 		foreach ( get_current_screen() as $key => $data )
 		{
 			empty( $data ) AND $data = '<em>not set</em>';
-			$this->data[ get_class() ][] = "{$key}: {$data}";
+			$this->data[ get_class() ][] = sprintf(
+				'<strong>%s</strong>: %s'
+				,$key
+				,$data
+			);
 		}
 	}
 } // END Class current_admin_screen

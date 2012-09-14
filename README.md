@@ -23,3 +23,7 @@ The info appears in new tabs in the »Contextual Help«-panel in the upper right
 <br /><sup>The available and set globals tab. Showing an open Array/Object</sup> 
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-3.png" />
+
+<br /><sup>The current screen tab.</sup> 
+
+<img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-4.png" />
