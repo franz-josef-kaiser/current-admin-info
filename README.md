@@ -28,3 +28,5 @@ The info appears in new tabs in the »Contextual Help«-panel in the upper right
 <br /><sup>The current screen tab.</sup> 
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-4.png" />
+
+_based on an idea by @StephenHarris [here](http://goo.gl/Mdtm0)._
