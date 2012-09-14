@@ -23,6 +23,7 @@ final class current_screen_data_bootstrap
 	private $includes = array(
 		 'base.abstract'
 		,'hooks.class'
+		,'screen.class'
 		,'globals.class'
 	);
 
