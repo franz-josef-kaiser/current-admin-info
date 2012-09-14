@@ -7,8 +7,9 @@ The info appears in new tabs in the »Contextual Help«-panel in the upper right
 
 ## Currently available info tabs:
 
-* Contextual hooks - all hooks that have »context«, the `$hook_suffix` in their name
+* Contextual hooks - all hooks that have »context«, the `$hook_suffix` in their name.
 * Set Globals: Arrays/Objects are hidden and shown on click (js).
+* Current screen info: Everything that the `$current_screen` object contains and isn't private.
 
 ------------------
 
