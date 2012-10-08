@@ -55,7 +55,7 @@ final class current_admin_globals extends current_screen_data
 
 				// Add to result
 				$this->data[ get_class() ][] = sprintf(
-					 "<td><code>$%s</code></td><td>%s</td><td>%s</td>"
+					 "<td><var>$%s</var></td><td>%s</td><td>%s</td>"
 					,$var
 					,$global
 					,current_filter()
@@ -78,7 +78,7 @@ final class current_admin_globals extends current_screen_data
 	{
 		sort( $set );
 		return sprintf(
-			 "<p>%s</p><table class='widefat'>%s<tr>%s</tr></table>"
+			 '<p>%s</p><table class="widefat">%s<tbody><tr>%s</tr></tbody></table>'
 			,'Filters where globals are already available.'
 			,'<thead><tr><th>Name</th><th>Data</th><th>Hook</th></tr></thead>'
 			,implode( "</tr><tr>", $set )
