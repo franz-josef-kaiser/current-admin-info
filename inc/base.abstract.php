@@ -27,13 +27,13 @@ abstract class current_screen_data
 
 	public function show( $help, $screen_id, $screen )
 	{
-		if ( 
+		/*if (
 			! method_exists( $screen, 'add_help_tab' )
 			OR ! current_user_can( 'manage_options' )
 			OR ! defined( 'WP_DEBUG' )
 			OR ! WP_DEBUG
 		)
-			return $help;
+			return $help;*/
 
 		foreach ( $this->data as $title => $set )
 		{

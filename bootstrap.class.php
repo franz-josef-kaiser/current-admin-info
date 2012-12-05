@@ -7,7 +7,7 @@
  * Author:      Franz Josef Kaiser <wecodemore@gmail.com>
  * Author URI:  http://unserkaiser.com
  * License:     The MIT License (MIT)
- * 
+ *
  * Copyright:   © Franz Josef Kaiser 2011-2012
  */
 
@@ -39,5 +39,5 @@ final class current_screen_data_bootstrap
 			require_once plugin_dir_path( __FILE__ )."inc/{$file}.php";
 	}
 } // END Class current_screen_data_bootstrap
-	
+
 } // endif;
