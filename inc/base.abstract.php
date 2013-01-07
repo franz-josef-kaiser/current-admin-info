@@ -1,10 +1,6 @@
 <?php
-! defined( 'ABSPATH' ) AND exit;
+defined( 'ABSPATH' ) OR exit;
 
-
-
-if ( ! class_exists( 'current_screen_data' ) )
-{
 
 /**
  * @package    Current Admin Info
@@ -27,13 +23,14 @@ abstract class current_screen_data
 
 	public function show( $help, $screen_id, $screen )
 	{
-		/*if (
+		if (
 			! method_exists( $screen, 'add_help_tab' )
 			OR ! current_user_can( 'manage_options' )
-			OR ! defined( 'WP_DEBUG' )
-			OR ! WP_DEBUG
+			# Uncomment if you only want to use this plugin during debug
+			# OR ! defined( 'WP_DEBUG' )
+			# OR ! WP_DEBUG
 		)
-			return $help;*/
+			return $help;
 
 		foreach ( $this->data as $title => $set )
 		{
@@ -59,5 +56,3 @@ abstract class current_screen_data
 		);
 	}
 } // END Class current_screen_data
-
-} // endif;
