@@ -1,5 +1,5 @@
 <?php
-! defined( 'ABSPATH' ) AND exit;
+defined( 'ABSPATH' ) OR exit;
 /**
  * Plugin Name: Current admin screen info
  * Description: Show information about contextual hooks and availability of globals in the admin UI.
@@ -11,10 +11,7 @@
  * Copyright:   © Franz Josef Kaiser 2011-2012
  */
 
-
-if ( ! class_exists( 'current_screen_data_bootstrap' ) )
-{
-	add_action( 'plugins_loaded', array( 'current_screen_data_bootstrap', 'init' ), 5 );
+add_action( 'plugins_loaded', array( 'current_screen_data_bootstrap', 'init' ), 5 );
 
 final class current_screen_data_bootstrap
 {
@@ -39,5 +36,3 @@ final class current_screen_data_bootstrap
 			require_once plugin_dir_path( __FILE__ )."inc/{$file}.php";
 	}
 } // END Class current_screen_data_bootstrap
-
-} // endif;

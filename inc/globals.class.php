@@ -1,11 +1,7 @@
 <?php
-! defined( 'ABSPATH' ) AND exit;
+defined( 'ABSPATH' ) OR exit;
 
-
-
-if ( ! class_exists( 'current_admin_globals' ) )
-{
-	add_action( 'plugins_loaded', array( 'current_admin_globals', 'init' ), 20 );
+add_action( 'plugins_loaded', array( 'current_admin_globals', 'init' ), 20 );
 
 /**
  * @package    Current Admin Info
@@ -66,9 +62,9 @@ final class current_admin_globals extends current_screen_data
 			}
 
 			// We're done: Remove callback & Return
-			if ( 
+			if (
 				empty( $this->globals )
-				OR 'contextual_help' === current_filter() 
+				OR 'contextual_help' === current_filter()
 			)
 				return remove_filter( current_filter(), __FUNCTION__ );
 		}
@@ -119,5 +115,3 @@ final class current_admin_globals extends current_screen_data
 		<?php
 	}
 } // END Class current_admin_globals
-
-} // endif;

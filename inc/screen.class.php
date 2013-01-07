@@ -1,11 +1,7 @@
 <?php
-! defined( 'ABSPATH' ) AND exit;
+defined( 'ABSPATH' ) OR exit;
 
-
-
-if ( ! class_exists( 'current_admin_screen' ) )
-{
-	add_action( 'plugins_loaded', array( 'current_admin_screen', 'init' ), 20 );
+add_action( 'plugins_loaded', array( 'current_admin_screen', 'init' ), 20 );
 
 /**
  * @package    Current Admin Info
@@ -40,5 +36,3 @@ final class current_admin_screen extends current_screen_data
 		}
 	}
 } // END Class current_admin_screen
-
-} // endif;
