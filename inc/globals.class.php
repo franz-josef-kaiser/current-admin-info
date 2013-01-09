@@ -73,11 +73,12 @@ final class current_admin_globals extends current_screen_data
 	protected function markup( $set )
 	{
 		sort( $set );
+		# class="widefat" NOT allowed in here, as it destroys the Quick-Edit on Post screens.
 		return sprintf(
-			 '<p>%s</p><table class="widefat">%s<tbody><tr>%s</tr></tbody></table>'
-			,'Filters where globals are already available.'
+			 '<p>%s</p><table class="form-table">%s<tbody><tr>%s</tr></tbody></table>'
+			,'Filters, where globals are already available.'
 			,'<thead><tr><th>Name</th><th>Data</th><th>Hook</th></tr></thead>'
-			,implode( "</tr><tr>", $set )
+			,implode( '</tr><tr>', $set )
 		);
 	}
 
@@ -85,7 +86,7 @@ final class current_admin_globals extends current_screen_data
 	{
 		is_object( $global ) AND $global = (array) $global;
 		$global = var_export( $global, true );
-		$html   = "<a href='#' class='toggle'>Open</a><pre style='display:none;'>{$global}</pre>";
+		$html   = "<a href='#' class='cas-toggle'>Open</a><pre style='display:none;'>{$global}</pre>";
 		return "<div class='current-screen-global'>{$html}</div>";
 	}
 
@@ -99,7 +100,7 @@ final class current_admin_globals extends current_screen_data
 			{
 				$( '#tab-link-current_admin_globals-screen-help a' ).on( 'click', function()
 				{
-					$( '.toggle' ).each( function( index, el )
+					$( '.cas-toggle' ).each( function( index, el )
 					{
 						$( el ).on( 'click', function()
 						{
