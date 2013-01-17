@@ -21,12 +21,16 @@ The info appears in new tabs in the »Contextual Help«-panel in the upper right
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-2.png" />
 
-<br /><sup>The available and set globals tab. Showing an open Array/Object</sup> 
+<br /><sup>The available and set globals tab. Showing an open Array/Object</sup>
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-3.png" />
 
-<br /><sup>The current screen tab.</sup> 
+<br /><sup>The current screen tab.</sup>
 
 <img src="https://raw.github.com/franz-josef-kaiser/current-admin-info/master/screenshot-4.png" />
 
 _based on an idea by @StephenHarris [here](http://goo.gl/Mdtm0)._
+
+## Extending with a child plugin
+
+We now have [a dedicated Wiki Page to explain](https://github.com/franz-josef-kaiser/current-admin-info/wiki/Extending-with-child-plugins) this task.
