@@ -31,4 +31,4 @@ final class current_admin_hooks extends current_screen_data
 		)
 			$this->data[ get_class() ][] = current_filter();
 	}
-} // END Class current_admin_hooks
+}

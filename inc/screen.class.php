@@ -35,4 +35,4 @@ final class current_admin_screen extends current_screen_data
 			);
 		}
 	}
-} // END Class current_admin_screen
+}

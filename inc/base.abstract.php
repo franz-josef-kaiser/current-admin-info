@@ -55,4 +55,4 @@ abstract class current_screen_data
 			,implode( "</li><li>", $set )
 		);
 	}
-} // END Class current_screen_data
+}

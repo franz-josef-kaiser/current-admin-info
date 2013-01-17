@@ -115,4 +115,4 @@ final class current_admin_globals extends current_screen_data
 		</script>
 		<?php
 	}
-} // END Class current_admin_globals
+}

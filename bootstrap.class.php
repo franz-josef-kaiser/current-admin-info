@@ -35,4 +35,4 @@ final class current_screen_data_bootstrap
 		foreach ( $this->includes as $file )
 			require_once plugin_dir_path( __FILE__ )."inc/{$file}.php";
 	}
-} // END Class current_screen_data_bootstrap
+}
