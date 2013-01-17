@@ -33,7 +33,8 @@ final class current_admin_globals extends current_screen_data
 
 	public function collect()
 	{
-		global $hook_suffix;
+		if ( ! defined( 'WP_ADMIN' ) )
+			return;
 
 		// Toggle script for Arrays/Objects
 		if ( 'admin_init' === current_filter() )

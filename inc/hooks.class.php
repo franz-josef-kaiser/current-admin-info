@@ -19,6 +19,9 @@ final class current_admin_hooks extends current_screen_data
 
 	public function collect()
 	{
+		if ( ! defined( 'WP_ADMIN' ) )
+			return;
+
 		global $hook_suffix;
 		// We're done: Remove callback
 		if ( 'contextual_help' === current_filter() )

@@ -19,6 +19,9 @@ final class current_admin_screen extends current_screen_data
 
 	public function collect()
 	{
+		if ( ! defined( 'WP_ADMIN' ) )
+			return;
+
 		remove_filter( current_filter(), __FUNCTION__ );
 		add_action( 'contextual_help', array( $this, 'screen' ), 0, 3 );
 	}
