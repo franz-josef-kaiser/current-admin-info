@@ -1,14 +1,16 @@
 <?php
 defined( 'ABSPATH' ) OR exit;
 /**
- * Plugin Name: Current admin screen info
- * Description: Show information about contextual hooks and availability of globals in the admin UI.
- * Version:     2012-10-08.2231
- * Author:      Franz Josef Kaiser <wecodemore@gmail.com>
- * Author URI:  http://unserkaiser.com
- * License:     The MIT License (MIT)
+ * Plugin Name:  Current admin screen info
+ * Description:  Show information about contextual hooks and availability of globals in the admin UI.
+ * Version:      1.1
+ * Author:       Franz Josef Kaiser <wecodemore@gmail.com>
+ * Author URI:   http://unserkaiser.com
+ * Contributers: Stephen Harris
+ * License:      The MIT License (MIT)
+ * License URI:  http://www.tldrlegal.com/license/mit-license
  *
- * Copyright:   © Franz Josef Kaiser 2011-2012
+ * Copyright:    © Franz Josef Kaiser 2011-2012
  */
 
 add_action( 'plugins_loaded', array( 'current_screen_data_bootstrap', 'init' ), 5 );
