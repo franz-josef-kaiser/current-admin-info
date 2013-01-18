@@ -1,5 +1,5 @@
 === WCM Current Admin Info ===
-Contributors: F J Kaiser, stephenh1988
+Contributors: F J Kaiser, stephenharris
 Tags: debug, globals, hooks, admin, current screen, contextual help, development, debug
 Tested up to: 3.5
 Stable tag: 1.1
@@ -22,7 +22,7 @@ If you want to get updates, just follow us on…
  * <a href="https://plus.google.com/b/109907580576615571040/109907580576615571040/posts">our page on Google+</a>
  * <a href="https://github.com/wecodemore">our GitHub repository</a>
 
-Based on an idea by Stephen Harris / @stephen1988
+Based on an idea by Stephen Harris / @stephenharris
 
 = Currently available info tabs =
 
