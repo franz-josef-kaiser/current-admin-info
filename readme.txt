@@ -26,23 +26,24 @@ Based on an idea by Stephen Harris / @stephen1988
 
 = Currently available info tabs =
 
-* Contextual hooks - all hooks that have »context«, the <code>$hook_suffix</code> in their name.
+* Contextual hooks - all hooks that have »context«, the `$hook_suffix` in their name.
 * Set Globals: Arrays/Objects are hidden and shown on click (js).
-* Current screen info: Everything that the <code>$current_screen</code> object contains and isn't private.
+* Current screen info: Everything that the `$current_screen` object contains and isn't private.
 
 == Frequently Asked Questions ==
 
 = How do I extend the plugin? =
 
 Write a normal plugin (or mu-plugin) with a plugin header and a class.
-Then write a simple class that extends the <code>current_screen_data</code> class and it hook into <code>plugins_loaded</code>.
+Then write a simple class that extends the `current_screen_data` class and it hook into `plugins_loaded`.
 Your class needs only two methods:
 
-* a static <code>init()</code> method
-* and a method that that is named <code>collect()</code> and does exactly that to your data for the output
-* you can optionally add a third method named <code>markup()<code> if you don't want a list. It has one argument that is your collected data.
+* a static `init()` method
+* and a method that that is named `collect()` and does exactly that to your data for the output
+* you can optionally add a third method named `markup()` if you don't want a list. It has one argument that is your collected data.
 
-<pre>
+Here's an example:
+
 	<?php
 	/** Plugin Name: (WCM) CAI Extension */
 	defined( 'ABSPATH' ) OR exit;
@@ -74,17 +75,21 @@ Your class needs only two methods:
 			// Custom formatting goes here
 		}
 	}
-</pre>
 
-If you now activate your plugin, you'll find a new help tab that is named <code>Wcm Cai Extension</code> (the class name is taken to form the contextual help tab title).
+
+If you now activate your plugin, you'll find a new help tab that is named `Wcm Cai Extension` (the class name is taken to form the contextual help tab title).
 
 = Can I use the plugin on a live site on a server? =
 
-Well, you can do a lot, but this is not recommended. The plugin hooks into the <code>gettext</code>, which is responsible for translating each and every string. This means that it will slow down your admin user interface pretty much. This plugin was written for local software development and we highly recommend that you run it only locally.
+Well, you can do a lot, but this is not recommended. The plugin hooks into the `gettext`, which is responsible for translating each and every string. This means that it will slow down your admin user interface pretty much. This plugin was written for local software development and we highly recommend that you run it only locally.
 
 = Can I get the same information for public screens (Themes)? =
 
 WCM CAI is not capable of doing this. It was written to hook into the contextual help tabs, which are not present in a Theme.
+
+== Installation ==
+
+Extract the zip file and just drop the contents in the `~/wp-content/plugins/` directory of your WordPress installation and then activate the Plugin from Plugins page.
 
 == Screenshots ==
 
