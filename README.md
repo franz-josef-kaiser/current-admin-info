@@ -11,6 +11,8 @@ The info appears in new tabs in the »Contextual Help«-panel in the upper right
 * Set Globals: Arrays/Objects are hidden and shown on click (js).
 * Current screen info: Everything that the `$current_screen` object contains and isn't private.
 
+Writtin and maintained by [Franz Josef Kaiser](https://plus.google.com/u/0/107110219316412982437?rel=author).
+
 ------------------
 
 <br /><sup>The contextual hooks tab.</sup>
