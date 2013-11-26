@@ -36,3 +36,7 @@ _based on an idea by @StephenHarris [here](http://goo.gl/Mdtm0)._
 ## Extending with a child plugin
 
 We now have [a dedicated Wiki Page to explain](https://github.com/franz-josef-kaiser/current-admin-info/wiki/Extending-with-child-plugins) this task.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/franz-josef-kaiser/current-admin-info/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
