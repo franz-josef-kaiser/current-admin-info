@@ -1,5 +1,4 @@
 <?php
-defined( 'ABSPATH' ) OR exit;
 /**
  * Plugin Name:  Current admin screen info
  * Description:  Show information about contextual hooks and availability of globals in the admin UI.
