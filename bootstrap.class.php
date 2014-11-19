@@ -9,7 +9,7 @@
  * License:      The MIT License (MIT)
  * License URI:  http://www.tldrlegal.com/license/mit-license
  *
- * Copyright:    © Franz Josef Kaiser 2011-2012
+ * Copyright:    © Franz Josef Kaiser 2011-2014
  */
 
 add_action( 'plugins_loaded', array( 'current_screen_data_bootstrap', 'init' ), 5 );
