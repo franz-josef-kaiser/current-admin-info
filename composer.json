@@ -1,26 +1,27 @@
 {
-    "name"        : "wecodemore/current-admin-info",
-    "version"     : "2.0.0",
-    "description" : "Displays info about the current admin screen and its globals, contextual hooks, etc.",
-    "type"        : "wordpress-plugin",
-    "keywords"    : [ "wordpress", "admin", "debug", "development" ],
-    "homepage"    : "https://github.com/franz-josef-kaiser/current-admin-info",
-    "license"     : "MIT",
-    "authors"     : [
+    "name"              : "wecodemore/current-admin-info",
+    "version"           : "2.0.0",
+    "description"       : "Displays info about the current admin screen and its globals, contextual hooks, etc.",
+    "type"              : "wordpress-plugin",
+    "keywords"          : [ "wordpress", "admin", "debug", "development" ],
+    "homepage"          : "https://github.com/franz-josef-kaiser/current-admin-info",
+    "license"           : "MIT",
+    "authors"           : [
         {
             "name"  : "Kaiser Franz Josef",
             "email" : "wecodemore@gmail.com"
         }
     ],
-    "support"     : {
+    "support"           : {
         "issues" : "https://github.com/franz-josef-kaiser/current-admin-info/issues"
     },
-    "minimum-stability" : "dev",
-    "require"     : {
+	"prefer-stable"     : true,
+    "minimum-stability" : "stable",
+    "require"           : {
         "php"                 : ">=5.3",
         "composer/installers" : "~1.0"
     },
-    "autoload"    : {
+    "autoload"          : {
         "psr-4" : {
 	        "WCM\\CurrentAdminInfo\\" : "src/"
         }
