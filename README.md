@@ -1,6 +1,7 @@
 Current Admin Info
 ==================
 
+[![GitTip to support us](https://img.shields.io/gratipay/wecodemore.svg)](//gratipay.com/wecodemore/)
 [![Latest Stable Version](https://poser.pugx.org/wecodemore/current-admin-info/v/stable.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
 [![Total Downloads](https://poser.pugx.org/wecodemore/current-admin-info/downloads.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
 [![Latest Unstable Version](https://poser.pugx.org/wecodemore/current-admin-info/v/unstable.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
