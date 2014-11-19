@@ -11,13 +11,18 @@ Displays info about the current admin screen and its globals, contextual hooks, 
 
 The info appears in new tabs in the »Contextual Help«-panel in the upper right corner of an admin screen.
 
+The update to **2.0** took me ~4 hours to write (including Readme, Wiki, Screenshots, etc.).
+I hope you appreciate the time that goes into providing freely available code. If you do, then
+just hit the GitTip button above or [donate something](http://unserkaiser.com/donate/) via my site.
+Thank you.
+
 ## Currently available info tabs:
 
 * Contextual hooks - all hooks that have »context«, the `$hook_suffix` in their name.
 * Set Globals: Arrays/Objects are hidden and shown on click (js).
 * Current screen info: Everything that the `$current_screen` object contains and isn't private.
 
-Writtin and maintained by [Franz Josef Kaiser](https://plus.google.com/u/0/107110219316412982437?rel=author).
+Written and maintained by [Franz Josef Kaiser](https://plus.google.com/u/0/107110219316412982437?rel=author).
 
 ------------------
 
