@@ -1,6 +1,11 @@
 Current Admin Info
 ==================
 
+[![Latest Stable Version](https://poser.pugx.org/wecodemore/current-admin-info/v/stable.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
+[![Total Downloads](https://poser.pugx.org/wecodemore/current-admin-info/downloads.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
+[![Latest Unstable Version](https://poser.pugx.org/wecodemore/current-admin-info/v/unstable.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
+[![License](https://poser.pugx.org/wecodemore/current-admin-info/license.svg)](https://packagist.org/packages/wecodemore/current-admin-info)
+
 Displays info about the current admin screen and its globals, contextual hooks, etc.
 
 The info appears in new tabs in the »Contextual Help«-panel in the upper right corner of an admin screen.
@@ -36,7 +41,3 @@ _based on an idea by @StephenHarris [here](http://goo.gl/Mdtm0)._
 ## Extending with a child plugin
 
 We now have [a dedicated Wiki Page to explain](https://github.com/franz-josef-kaiser/current-admin-info/wiki/Extending-with-child-plugins) this task.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/franz-josef-kaiser/current-admin-info/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

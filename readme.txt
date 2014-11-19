@@ -1,8 +1,8 @@
 === WCM Current Admin Info ===
 Contributors: F J Kaiser, stephenharris
 Tags: debug, globals, hooks, admin, current screen, contextual help, development, debug
-Tested up to: 3.5
-Stable tag: 1.1
+Tested up to: 4.1
+Stable tag: 2.0
 Requires at least: 3.5
 License: MIT
 License URI: http://www.tldrlegal.com/license/mit-license
@@ -34,44 +34,46 @@ Based on an idea by Stephen Harris / @stephenharris
 
 = How do I extend the plugin? =
 
-Write a normal plugin (or mu-plugin) with a plugin header and a class.
-Then write a simple class that extends the `current_screen_data` class and it hook into `plugins_loaded`.
-Your class needs only two methods:
+Write a normal plugin with a plugin header.
+Then write a simple class that extends the `WCM\CurrentAdminInfo\AbstractScreenData` class.
+Hook that with a callback into `plugins_loaded`. There will automatically be a new tab added
+to the help screen tabs that is named like your class.
 
-* a static `init()` method
-* and a method that that is named `collect()` and does exactly that to your data for the output
-* you can optionally add a third method named `markup()` if you don't want a list. It has one argument that is your collected data.
+Your class needs only one method:
 
-Here's an example:
+* Named `collect()` and does nothing than collecting data to output in your help tab
+* you can optionally add a second method named `markup()` if you don't want a list. It has one argument: your collected data.
+
+Here's an example. The `Bootstrap.php` main class:
 
 	<?php
 	/** Plugin Name: (WCM) CAI Extension */
-	defined( 'ABSPATH' ) OR exit;
 
-	add_action( 'plugins_loaded', array( 'wcm_cai_extension', 'init' ), 20 );
-	final class wcm_cai_extension extends current_screen_data
+	add_action( 'plugins_loaded', function()
 	{
-		private static $instance;
+		if ( ! is_admin() )
+			return;
 
-		public static function init()
-		{
-			null === self :: $instance AND self :: $instance = new self;
-			return self :: $instance;
-		}
+		$extension = new YourVendorName\YourExtension;
+		$extension->setup();
+	} );
 
-		// This method collects data
+The actual class collecting and formatting data
+
+	<?php
+	namespace YourVendorName;
+
+	class YourExtension extends WCM\CurrentAdminInfo\AbstractScreenData;
+	{
 		public function collect()
 		{
-			if ( ! defined( 'WP_ADMIN' ) )
-				return;
-
-			// Your logic goes here
+			// Your data collecting logic goes here
 		}
+
 		// This method is optional and formats your output
 		protected function markup( $set )
 		{
 			sort( $set );
-
 			// Custom formatting goes here
 		}
 	}
@@ -99,6 +101,18 @@ Extract the zip file and just drop the contents in the `~/wp-content/plugins/` d
 4. The current screen tab.
 
 == Changelog ==
+
+= 2.0 =
+
+* Refactored to PHP 5.3+
+* Added Composer support
+* PSR-4 compatible namespaces
+* Updated Screenshots
+* Moved core code to the new `src/` dir
+* Simplified loader
+* Removed static instance initializing
+* Moved setup from object constructor to dedicated setup method
+* Loads modules now on priority 5 instead of 20
 
 = 1.1 =
 
